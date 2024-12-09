@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxp0u53s4dnxp"]
+
+[ext_resource type="Texture2D" uid="uid://dlbjkypk4w672" path="res://assets/tilemap.png" id="1_yjxte"]
+
+[node name="UI" type="Node2D"]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+offset_left = 29.0
+offset_top = 207.0
+offset_right = 1122.0
+offset_bottom = 623.0
+texture = ExtResource("1_yjxte")
+region_rect = Rect2(-0.117407, -0.0960789, 32.386, 32.538)
