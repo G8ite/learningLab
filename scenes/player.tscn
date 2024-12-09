@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_08rfn"]
 [ext_resource type="Texture2D" uid="uid://d3w6os6c0bq3b" path="res://assets/characters/player.png" id="2_8u0ya"]
-[ext_resource type="Texture2D" uid="uid://c82fts7jrx86y" path="res://assets/image-removebg-preview(7).png" id="3_t8ru3"]
+[ext_resource type="PackedScene" uid="uid://bxp0u53s4dnxp" path="res://scenes/ui.tscn" id="3_63cc8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gjao1"]
 atlas = ExtResource("2_8u0ya")
@@ -473,12 +473,7 @@ autostart = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
-offset_left = 6.0
-offset_top = 162.0
-offset_right = 1150.0
-offset_bottom = 680.0
-texture = ExtResource("3_t8ru3")
+[node name="Control" parent="CanvasLayer" instance=ExtResource("3_63cc8")]
 
 [connection signal="body_entered" from="player_hitbox" to="." method="_on_player_hitbox_body_entered"]
 [connection signal="body_exited" from="player_hitbox" to="." method="_on_player_hitbox_body_exited"]

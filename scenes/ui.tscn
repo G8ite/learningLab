@@ -1,13 +1,47 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxp0u53s4dnxp"]
+[gd_scene load_steps=3 format=3 uid="uid://bxp0u53s4dnxp"]
 
-[ext_resource type="Texture2D" uid="uid://dlbjkypk4w672" path="res://assets/tilemap.png" id="1_yjxte"]
+[ext_resource type="FontFile" uid="uid://bij7qdxkubsin" path="res://assets/yoster.ttf" id="1_bdm11"]
+[ext_resource type="Texture2D" uid="uid://cqji1jpcj3glj" path="res://assets/fleche_droite.png" id="2_kxkwb"]
 
-[node name="UI" type="Node2D"]
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="NinePatchRect" type="NinePatchRect" parent="."]
-offset_left = 29.0
-offset_top = 207.0
-offset_right = 1122.0
-offset_bottom = 623.0
-texture = ExtResource("1_yjxte")
-region_rect = Rect2(-0.117407, -0.0960789, 32.386, 32.538)
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 123.0
+offset_right = 1116.0
+offset_bottom = 627.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer"]
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("1_bdm11")
+theme_override_font_sizes/normal_font_size = 26
+text = "TEST TEST TEST TEST TEST TEST"
+
+[node name="PanelContainer2" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 57.0
+offset_right = 350.0
+offset_bottom = 117.0
+
+[node name="Label" type="Label" parent="PanelContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_bdm11")
+theme_override_font_sizes/font_size = 24
+text = "Amandine"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1044.0
+offset_top = 557.0
+offset_right = 1094.0
+offset_bottom = 607.0
+texture_normal = ExtResource("2_kxkwb")
