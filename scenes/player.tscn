@@ -424,7 +424,7 @@ radius = 11.0
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(133, 78)
 collision_layer = 5
-collision_mask = 2
+collision_mask = 10
 script = ExtResource("1_08rfn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -474,9 +474,16 @@ autostart = true
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" parent="CanvasLayer" instance=ExtResource("3_63cc8")]
+visible = false
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Reset"
 
 [connection signal="body_entered" from="player_hitbox" to="." method="_on_player_hitbox_body_entered"]
 [connection signal="body_exited" from="player_hitbox" to="." method="_on_player_hitbox_body_exited"]
 [connection signal="timeout" from="attack_cooldown" to="." method="_on_attack_cooldown_timeout"]
 [connection signal="timeout" from="deal_attack_timer" to="." method="_on_deal_attack_timer_timeout"]
 [connection signal="timeout" from="regen_timer" to="." method="_on_regen_timer_timeout"]
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

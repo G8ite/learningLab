@@ -1,0 +1,92 @@
+{
+    "dialogs": [
+        {
+            "id":1,
+            "text":"Bienvenue dans cet exposé sur Godot."
+        },
+        {
+            "id":2,
+            "text":"Dans cet exposé, nous parlerons de ce qu'est Godot. Puis nous ferons un petit point sur son histoire, sur ses fonctionnalités principales et ses points forts et ses limites. Ensuite, nous parlerons un peu du libre et de ce que j'ai pu expérimenter."
+        },
+        {
+            "id":3,
+            "text":"Qu'est ce que Godot ? C'est un moteur de jeu Open-source (Licence MIT), lancé en 2014. C'est gratuit, léger et multiplateforme ! "
+        },
+        {
+            "id":4,
+            "text":"Sa mission ? Offrir une alternative accessible et flexible pour créer des jeux sans limitations de coûts."
+        },
+        {
+            "id":5,
+            "text":"Pourquoi choisir Godot ?"
+        },
+        {
+            "id":6,
+            "text":"Facilité d'utilisation, Langage de programmation, Performance et Communauté active"
+        },
+        {
+            "id":7,
+            "text":"Pricipales caractéristiques"
+        },
+        {
+            "id":8,
+            "text":"Moteur 2D avancé, conçu pour la création de jeux en 2D (différent de Unity/Unreal qui privilégient le 3D). Support 3D basique mais en constante amélioration."
+        },
+        {
+            "id":9,
+            "text":"Système de nœuds : Architecture modulaire (scènes et nœuds) facilitant la gestion des objets du jeu"
+        },
+        {
+            "id":10,
+            "text":"Godot et le Libre"
+        },
+        {
+            "id":11,
+            "text":"Le code source de Godot est accessible publiquement, sous la licence MIT. Cela permet à chacun de l'utiliser, de le modifier et de le redistribuer. Pas de frais de licence, pas de royalties."
+        },
+        {
+            "id":12,
+            "text":"Liberté d’utilisation, de modification et de redistribution. Transparence totale, chaque utilisateur peut voir, comprendre et modifier le code. Aucun verrouillage propriétaire, ce qui favorise l'autonomie des développeurs."
+        },
+        {
+            "id":13,
+            "text":"Avantages et limites."
+        },
+        {
+            "id":14,
+            "text":"Avantages : Moteur complet et gratuit, supporte plusieurs plateformes. Idéal pour les développeurs indépendants et les débutants."
+        },
+        {
+            "id":15,
+            "text":"Limites : Moins puissant en 3D par rapport à des moteurs comme Unity ou Unreal. Moins de ressources et d'outils prêts à l'emploi comparé à des moteurs plus grands."
+        },
+        {
+            "id":16,
+            "text":"Pourquoi utiliser Godot ?"
+        },
+        {
+            "id":17,
+            "text":"Prototypage rapide : Idéal pour tester des idées sans contrainte financière. Apprentissage : Facile à apprendre pour les débutants. Liberté créative : Aucune restriction de licence ou de code, parfait pour l'open-source."
+        },
+        {
+            "id":18,
+            "text":"Godot dans les Ludum Dare"
+        },
+        {
+            "id":19,
+            "text":"Ludum Dare : Compétition de développement de jeux rapide (48h ou 72h). Pourquoi Godot brille dans ce contexte ? Légèreté et rapidité de prototypage. Facilité d'utilisation pour un développement en temps limité. Communauté active de créateurs de jeux indépendants."
+        },
+        {
+            "id":20,
+            "text":"Conclusion"
+        },
+        {
+            "id":21,
+            "text":"Godot est un moteur puissant, flexible et gratuit. déal pour les développeurs débutants ou indépendants, ainsi que pour les projets rapides comme ceux des Ludum Dare."
+        },
+        {
+            "id":22,
+            "text":"Téléchargez Godot et faites la Ludum Dare, du 4 au 7 avril 2025 avec nous."
+        }
+    ]
+}

@@ -152,3 +152,11 @@ func _on_regen_timer_timeout():
 			health = 100
 	if health <= 0:
 		health = 0
+
+
+func _on_button_pressed() -> void:
+	print("hop")
+	var game_state = GameStateManager.load_game_state("res://game_state.dat")
+	game_state["current_dialog_id"] = 1
+	GameStateManager.save_game_state("res://game_state.dat", game_state)
+	print(game_state["current_dialog_id"])

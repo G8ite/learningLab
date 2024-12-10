@@ -8,6 +8,14 @@ var health = 100
 var player_inattack_zone = false
 var can_take_damage = true
 
+var dialogue_ui = null
+var dialogue_instance = null
+
+var player_scene = null
+var game_state_machine = null
+
+var dialogue_id = 4
+
 func _physics_process(_delta):
 	deal_with_damage()
 	update_health()
@@ -49,7 +57,6 @@ func deal_with_damage():
 			health = health - 20
 			$take_damage_cooldown.start()
 			can_take_damage = false
-			print(health)
 			if health <=0:
 				self.queue_free()
 

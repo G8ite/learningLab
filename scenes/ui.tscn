@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxp0u53s4dnxp"]
+[gd_scene load_steps=4 format=3 uid="uid://bxp0u53s4dnxp"]
 
 [ext_resource type="FontFile" uid="uid://bij7qdxkubsin" path="res://assets/yoster.ttf" id="1_bdm11"]
+[ext_resource type="Script" path="res://scripts/ui.gd" id="1_x53s7"]
 [ext_resource type="Texture2D" uid="uid://cqji1jpcj3glj" path="res://assets/fleche_droite.png" id="2_kxkwb"]
 
 [node name="Control" type="Control"]
@@ -10,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_x53s7")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 0
@@ -22,7 +24,7 @@ offset_bottom = 627.0
 layout_mode = 2
 theme_override_fonts/normal_font = ExtResource("1_bdm11")
 theme_override_font_sizes/normal_font_size = 26
-text = "TEST TEST TEST TEST TEST TEST"
+text = "Bienvenue dans cet exposé sur Godot."
 
 [node name="PanelContainer2" type="PanelContainer" parent="."]
 layout_mode = 0
